@@ -1,0 +1,40 @@
+#content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #999;
+    margin-bottom: 25px;
+}
+
+#Produto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: azure;
+} 
+
+#Produto h2{
+    width: 100%;
+}
+
+.produto {
+    width: 45%;
+}
+
+/* > é o seletor descendente. Aplica  as propriedades somente no ul que é filho direto de #menu-principal, não nos submenus */
+#menu-principal > ul {
+    display: flex;
+    justify-content: center;
+}
+
+#menu-principal .submenu {
+    position: relative;
+    left: -5000px;    
+}
+
+#menu-principal li:hover .submenu{
+    left: 0;
+}
